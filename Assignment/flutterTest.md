@@ -1,4 +1,8 @@
-# 안드로이드 과제 입니다.
+# 안드로이드 과제 
+어려워 ㅜㅜ
+실행화면
+![alt text]({39D26A98-5107-45AB-BF77-50264DE53E76}.png)
+
 ```dart
 import 'package:flutter/material.dart';
 import 'dart:async'; // Timer 쓰려면 필요
