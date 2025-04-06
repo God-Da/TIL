@@ -149,7 +149,7 @@ if __name__ == "__main__":
     s.insert_front('banana')
     s.printList()
 
-    print("cherry는 %d번쨰 노드에 있다." % (s.search("cherry") + 1))  # cherry 위치 출력
+    print("cherry는 %d번째 노드에 있다." % (s.search("cherry") + 1))  # cherry 위치 출력
 
     s.delete_after(s.head)  # head 다음 노드 삭제
     s.printList()
