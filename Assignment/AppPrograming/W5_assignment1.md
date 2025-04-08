@@ -1,8 +1,8 @@
 # 화면배치 과제1
 ## 강의자료
-![alt text](img/w5_1.jpg)
+![alt text](img/w5_1.jpg width="200" height="400")
 ## 내 화면
-![alt text](img/w5_11.png)
+![alt text](img/w5_11.png width="200" height="400")
  
 ```Dart
 import 'package:flutter/material.dart';
