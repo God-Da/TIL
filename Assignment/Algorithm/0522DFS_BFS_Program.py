@@ -13,6 +13,7 @@ graph = [[] for _ in range(n + 1)]
 # 간선 입력 받아 양방향 연결
 for _ in range(m):
     a, b = map(int, input().split())
+    graph[a].append(b)
     graph[b].append(a)
 
 # 정점 번호가 작은 것부터 방문하기 위해 정렬
