@@ -25,6 +25,9 @@
 - **그래픽카드**: GeForce 4060 Ti
 
 ## 🗂️ 폴더 구조
+```bash
+tree /F > structure.txt
+```
 
 ```bash
 TIL/
@@ -41,35 +44,96 @@ TIL/
 │  │      2025-03-25.md
 │  │      2025-03-27.md
 │  │      2025-03-31.md
-│  │
-│  └─04_April
-│          2025-04-02.md
-│          2025-04-04.md
-│
+│  │      
+│  ├─04_April
+│  │      2025-04-02.md
+│  │      2025-04-04.md
+│  │      2025-04-06.md
+│  │      2025-04-08.md
+│  │      2025-04-13.md
+│  │      2025-04-14.md
+│  │      2025-04-15.md
+│  │      2025-04-16.md
+│  │      2025-04-18.md
+│  │      2025-04-19.md
+│  │      
+│  ├─05_May
+│  │      2025-05-29.md
+│  │      
+│  └─06_Jun
+│          2025-06-01.md
+│          2025-06-02.md
+│          
 ├─Assignment
 │  ├─Algorithm
-│  │      singlyLinkedList250327.py
+│  │      0327singlyLinkedList.py
+│  │      0403singlyLinkedList.py
+│  │      0508dfs_assingment.py
+│  │      0522DFS_BFS_Program.py
 │  │      stackSequence.py
-│  │
+│  │      
 │  └─AppPrograming
-│          0311.md
-│          0401
-│          flutterTest.md
-│
-├─Baekjoon_Daily
-│  │  Solution.md
-│  │
-│  └─codes
-│          1000.md
-│          1001.md
-│          1008.md
-│          10869.md
-│          10926.md
-│          10998.md
-│          18108.md
-│          2557.md
-│
-└─Course
-    └─KOKOATALK
-            3_LEARNING CSS.md
+│      │  W9_assignment.md
+│      │  
+│      ├─easyLED_플러터
+│      │      image.png
+│      │      프로젝트의 이름바꾸는 법.md
+│      │      
+│      └─midtest
+│          │  0311.md
+│          │  0401
+│          │  flutterTest.md
+│          │  W5_assignment1.md
+│          │  W5_assignment2.md
+│          │  W6_assignment.md
+│          │  
+│          └─img
+│                  0403.png
+│                  w5_1.jpg
+│                  w5_11.png
+│                  w5_2.jpg
+│                  w5_21.png
+│                  w6_Lifecycle.png
+│                  w6_StatefulWidget.png
+│                  w6_StatelessWidget.png
+│                  
+├─CodingTest
+│  ├─기초문제
+│  │      day1_대소문자 바꿔서 출력하기.py
+│  │      day1_특수문자 출력하기.py
+│  │      day2_문자열 겹쳐쓰기.py
+│  │      day3_더 크게 합치기.py
+│  │      day3_두 수의 연산값 비교하기.py
+│  │      day3_문자열섞기.py
+│  │      기초문제 정리.md
+│  │      
+│  └─입문문제
+├─Course
+│  ├─CHROMEWEB
+│  ├─KOKOATALK
+│  │      3_LEARNING CSS.md
+│  │      
+│  ├─빅데이터
+│  │      0312.R
+│  │      0319.R
+│  │      0326.R
+│  │      0402.R
+│  │      0409.R
+│  │      문제모음.md
+│  │      빅데이터.md
+│  │      시험나온다는거정리.md
+│  │      
+│  └─캡스톤(프로젝트)
+│          Exam.md
+│          FactorialExample.java
+│          FibonacciExample.java
+│          FindMaxExample.java
+│          HandCodingExample.java
+│          HorizontalMultiplicationTable.java
+│          midtest.java
+│          MultiplicationTableExample.java
+│          StarPatterns.java
+│          
+└─image
+
 ```
