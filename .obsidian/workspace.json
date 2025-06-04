@@ -1,0 +1,180 @@
+{
+  "main": {
+    "id": "d5f9d55dc8aa7714",
+    "type": "split",
+    "children": [
+      {
+        "id": "cae46f2ecd5965fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f1ea4e1c47182622",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2025/06_Jun/2025-06-04.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-06-04"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9ac943a2c67f42f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f325e46d6592d47",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "96f15609bc6e95c7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "bb802f57e999552b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "ebd1351b2ec2e1f7",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "58b267055bd0775b",
+    "type": "split",
+    "children": [
+      {
+        "id": "939f8d6a6d9781b3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "429b07e2a5d9cbe8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2025/06_Jun/2025-06-04.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "2025-06-04 의 백링크"
+            }
+          },
+          {
+            "id": "ddecdc5844b43c66",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2025/06_Jun/2025-06-04.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "2025-06-04 의 나가는 링크"
+            }
+          },
+          {
+            "id": "f8bd2c493f38ca16",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "6f6073147e42bb9e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2025/06_Jun/2025-06-04.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "2025-06-04 의 개요"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "f1ea4e1c47182622",
+  "lastOpenFiles": [
+    "2025/06_Jun/2025-06-03.md",
+    "2025/06_Jun/2025-06-04.md",
+    "2025/06_Jun/2025-06-02.md",
+    "CodingTest/기초문제/day4_flag에 따라 다른 값 반환하기.py",
+    "Course/알고리즘/10주차.md",
+    "Course/알고리즘"
+  ]
+}
