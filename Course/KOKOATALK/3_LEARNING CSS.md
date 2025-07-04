@@ -176,3 +176,179 @@ lign-item: stretch (늘어남)
 ```
 
 5. vh는 viewpoint height 줄임말 / 화면높이의 %를 지정
+
+# 3.11 Flexbox Part Two (09:02)
+
+### Flexbox 심화 (축 방향과 요소 배치 제어)
+
+1. 기본 축 방향 변경:  
+   - `flex-direction` 속성으로 주축(main axis)과 교차축(cross axis)을 변경할 수 있다.  
+   - 기본값은 `row` (가로 방향).  
+   - `flex-direction: column;`을 사용하면 주축이 세로로 바뀌고, 교차축은 가로가 된다.
+
+2. flex-direction의 다양한 옵션:  
+   - `row` (기본값): 왼쪽 → 오른쪽  
+   - `row-reverse`: 오른쪽 → 왼쪽  
+   - `column`: 위 → 아래  
+   - `column-reverse`: 아래 → 위
+
+3. 요소 감싸기 제어:  
+   - `flex-wrap: nowrap;` (기본값): 줄바꿈 없이 한 줄에 배치  
+   - `flex-wrap: wrap;`: 공간이 부족하면 다음 줄로 이동  
+   - `flex-wrap: wrap-reverse;`: 줄바꿈 시 반대 방향으로 감쌈
+
+4. Flexbox의 크기 계산 방식:  
+   - Flexbox는 자식 요소의 `width`를 초기 크기로만 인식  
+   - 모든 요소를 한 줄에 배치하려고 할 때, 자동으로 크기를 조정할 수 있음
+
+5. 부모-자식 구조 자유롭게 생성 가능:  
+   - Flexbox는 여러 개의 자식 요소를 유연하게 배치할 수 있도록 설계됨
+
+```css
+/* 예시 */
+.container {
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap-reverse;
+}
+```
+
+물론이죠! 아래는 요청하신 형식에 맞춰 정리한 내용입니다:
+
+---
+
+# 3.12 Fixed (08:19)
+
+### 📌 position: fixed (스크롤과 무관한 고정 위치)
+
+1. 요소를 브라우저 화면(뷰포트)에 고정시킨다.  
+   - 스크롤을 해도 항상 같은 자리에 머무름  
+   - 문서 흐름에서 벗어나 별도의 레이어에 위치함
+
+2. 초기 위치에 고정되지만, 위치 속성(top, left, right, bottom)을 지정하면 해당 위치로 이동  
+   - 예: `top: 0; left: 0;` → 화면 왼쪽 상단에 고정  
+   - 아무 속성도 지정하지 않으면 처음 배치된 위치에 고정됨
+
+3. 다른 요소들과 겹칠 수 있음  
+   - fixed 요소는 별도의 레이어에 존재하므로 이후 요소들과 겹침 가능  
+   - 필요 시 `z-index`로 겹침 순서 조정 가능
+
+4. 항상 화면 상단에 위치하는 것처럼 보임  
+   - 기본적으로 가장 앞쪽(z축 위)에 렌더링됨
+
+```css
+/* position: fixed 예시 */
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+}
+```
+
+5. 주의할 점  
+   - fixed 요소는 부모 요소의 위치와 무관하게 브라우저 전체를 기준으로 위치함  
+   - 다른 요소들과의 레이아웃 충돌을 방지하려면 적절한 마진 또는 패딩 조정 필요
+
+# 3.13 Relative & Absolute (07:45)
+### 📍 Position 속성 정리 (static, relative, absolute, fixed)
+
+1. **position: static (기본값)**  
+   - 모든 요소의 기본값  
+   - top, left, right, bottom 속성 무시됨  
+   - 문서 흐름에 따라 배치됨
+
+2. **position: fixed**  
+   - 브라우저 화면(뷰포트)을 기준으로 고정  
+   - 스크롤해도 위치가 변하지 않음  
+   - top, left, right, bottom 속성으로 위치 지정 가능  
+   - 문서 흐름에서 제거되며, 별도의 레이어(z-index 상단)에 위치함
+
+3. **position: relative**  
+   - 요소의 원래 위치를 기준으로 이동  
+   - top, left, right, bottom 속성 사용 가능  
+   - 문서 흐름에는 영향을 주지 않음 (공간은 그대로 차지함)  
+   - 기준점 역할을 하며, 자식 요소의 absolute 기준이 될 수 있음
+
+4. **position: absolute**  
+   - 가장 가까운 조상 중 `position`이 static이 아닌 요소를 기준으로 위치함  
+   - 기준이 되는 조상이 없으면 `viewport`(화면 전체)를 기준으로 함  
+   - top, left, right, bottom 속성으로 위치 지정  
+   - 문서 흐름에서 제거됨 (공간 차지하지 않음)
+### 💡 추가 설명
+
+- `absolute`는 종종 혼동을 일으키는데, 기준이 되는 요소가 없을 경우 body가 아닌 **초기 컨테이닝 블록(viewport)** 을 기준으로 삼습니다.  
+- 기준이 되는 조상 요소는 `position: relative`, `absolute`, `fixed`, `sticky` 중 하나여야 합니다.  
+- `relative`는 요소 자체의 위치를 기준으로 이동하지만, 여전히 문서 흐름에 공간을 차지합니다.  
+- `absolute`와 `fixed`는 문서 흐름에서 제거되며, 겹침 현상이 발생할 수 있습니다.
+### 🧪 예시 코드
+
+```css
+.parent {
+  position: relative;
+}
+
+.child {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+이 경우 `.child`는 `.parent`를 기준으로 위치가 지정
+```
+
+# 3.14 Pseudo Selectors Part One (08:57)
+
+### Pseudo Selectors (가상 선택자)
+기존의 선택 방식(태그, ID `#`, 클래스 `.`)보다 더 세밀하게 요소를 선택할 수 있는 CSS 기능
+HTML 구조를 변경하지 않고도 특정 요소만 스타일링할 수 있어 매우 유용
+### 주요 Pseudo Selectors
+
+1. **:first-child**  
+   - 부모의 첫 번째 자식 요소를 선택  
+   ```css
+   div:first-child {
+     background-color: tomato;
+   }
+   ```
+
+2. **:last-child**  
+   - 부모의 마지막 자식 요소를 선택  
+   ```css
+   div:last-child {
+     background-color: teal;
+   }
+   ```
+
+3. **:nth-child(n)**  
+   - 부모의 자식 중 n번째 요소를 선택  
+   - `n`은 1부터 시작  
+   ```css
+   span:nth-child(2) {
+     background-color: teal;
+   }
+   ```
+
+4. **:nth-child(even / odd)**  
+   - 짝수(even) 또는 홀수(odd) 번째 자식 요소 선택  
+   ```css
+   span:nth-child(even) {
+     background-color: teal;
+   }
+   ```
+
+5. **:nth-child(5n + 1)**  
+   - 수학적 패턴을 이용한 선택  
+   - `n`에 0부터 정수를 대입하여 해당 순서의 요소 선택  
+   ```css
+   span:nth-child(5n + 1) {
+     background-color: silver;
+   }
+   ```
+
+### 💡 장점
+
+- HTML 구조를 수정하지 않고도 정교한 스타일링 가능  
+- ID나 클래스를 추가하지 않아도 특정 요소만 선택 가능  
+- 반복되는 패턴에 매우 유용 (ex. 테이블 줄무늬, 리스트 강조 등)
