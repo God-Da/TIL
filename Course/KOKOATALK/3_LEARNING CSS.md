@@ -406,11 +406,6 @@ CSS에서 요소 간의 관계(부모-자식, 형제 등)를 기반으로 스타
 | `>` | 자식 선택자 | `div > span` | div의 바로 아래 자식 span |
 | `+` | 인접 형제 선택자 | `p + span` | p 바로 다음에 오는 span |
 
-# 3.16 Pseudo Selectors part Two (08:08)
-물론이죠! 아래는 요청하신 형식에 맞춰 Pseudo Selectors Part Two와 Attribute Selectors 내용을 정리한 버전입니다:
-
----
-
 # 3.16 Pseudo Selectors Part Two (08:08)
 ### 🧩 Pseudo Selectors & Attribute Selectors (속성 기반 선택자)
 HTML 요소의 속성(attribute)이나 상태(state)를 기반으로 정밀하게 선택할 수 있는 CSS 선택자들  
