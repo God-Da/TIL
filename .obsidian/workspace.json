@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Project/어디서봐,OTT캐치,지금볼래.md",
+                "file": "개발계획서.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "어디서봐,OTT캐치,지금볼래"
+              "title": "개발계획서"
             }
           }
         ]
@@ -160,6 +160,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:새 베이스 생성하기": false,
       "switcher:빠른 전환기 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
@@ -170,10 +171,10 @@
   },
   "active": "6dc7098aeba2c403",
   "lastOpenFiles": [
+    "Project/어디서봐,OTT캐치,지금볼래.md",
     "Project/산책할개.md",
     "Project/프로젝트 전반적으로 고려할 것.md",
     "개발계획서.md",
-    "Project/어디서봐,OTT캐치,지금볼래.md",
     "Project/급똥지도,급해요,화장실어디.md",
     "Course/알고리즘/시간 복잡도.md",
     "Project",
